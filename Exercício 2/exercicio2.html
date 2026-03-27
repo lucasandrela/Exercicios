@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style> body { background: #0f172a; } </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-6">
+    <a href="/index.html" class="fixed top-6 left-6 text-white text-xs font-bold uppercase tracking-widest bg-white/10 px-4 py-2 rounded-full">← Voltar</a>
+    <div class="bg-white w-full max-w-4xl rounded-[2rem] shadow-2xl overflow-hidden grid grid-cols-1 md:grid-cols-2">
+        <div class="p-10 space-y-8 border-r border-gray-100">
+            <p id="data-hora" class="text-[10px] font-bold text-indigo-500 uppercase tracking-widest"></p>
+            <h2 class="text-4xl font-black tracking-tighter">Reajuste</h2>
+            <input type="number" id="sal-atual" placeholder="Salário Atual" class="w-full p-4 bg-gray-50 rounded-2xl border-none outline-none font-bold text-xl">
+            <button onclick="calcular()" class="w-full bg-emerald-600 text-white font-bold py-5 rounded-2xl uppercase tracking-widest">Aplicar Aumento</button>
+        </div>
+        <div class="p-10 bg-gray-950 text-white flex flex-col justify-center">
+            <span id="pct" class="text-emerald-400 font-bold uppercase text-xs mb-2">0% de aumento</span>
+            <div class="text-6xl font-black text-white">R$ <span id="res-total">0,00</span></div>
+        </div>
+    </div>
+    <script src="codigo.js"></script>
+</body>
+</html>

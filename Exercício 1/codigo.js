@@ -9,7 +9,7 @@ function calcular() {
     document.getElementById('res-total').innerText = total.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 
-// Lógica de Data/Hora (Desafio 2)
+// Lógica de Data/Hora (Desafio 2);
 function update() {
     // Objeto Date captura o horário do sistema do usuário
     const agora = new Date();
